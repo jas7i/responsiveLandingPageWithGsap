@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    Color: #fff;
+}
+nav img{
+    height: auto;
+    width:250px;
+    margin-left: 40px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.part2{
+    display: flex;
+    align-items: center;
+    gap:4vw;
+    font-size: 1vw;
+}
+.part3{
+    display: flex;
+    align-items: center;
+    gap:2vw;
+    font-size: 1vw;
+    margin-right: 40px;
+}
+.part3 button{
+    padding: .7vw .7vw;
+}
+.txt {
+    margin-top: 60px;
+    display: flex;
+    justify-content:space-evenly;
+}
+.img1 img{
+    height: 200px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 25px;
+    /* margin-left: 5vw; */
+}
+.img2 img{
+    height: 120px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+.img2{
+    /* margin-right: 500px; */
+}
+
+.mytxt h1{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 100px;
+     z-index: 44;
+     position: relative;
+
+}
+.mytxt span {
+    background-color: rgb(233, 72, 54);
+    border-radius: 50px;
+    padding:20px 30PX;
+    font-size:25px;
+    margin: 20px;
+}
+
+/* .main3{
+    display: flex;
+    justify-content: space-around;
+} */
+.main3 img:nth-child(1){
+    height: 150px;
+    width: 230px;
+    border-radius: 15px;
+    position: absolute;
+    left: 19.5vw;
+    top:32vw;
+    z-index: 0;
+}
+.main3 img:nth-child(2){
+    height: 220px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50px;
+    right:30vw;
+    position: absolute;
+    top:30vw;
+}
+p{
+    position: absolute;
+    left: 45%;
+    top:95%;
+}
+
+.part3 i{
+    display: none;
+}
+.down{
+    display: none;
+}
+@media (max-width: 600px) {
+    nav{
+        /* border-top: 1px solid #f3f2f2 */
+    }
+    .part2{
+    display: none;  
+    }
+    .part3 h3, .part3 button{
+        display: none;
+    }
+    .part3 i{
+        display: block;
+        font-size: 7vw;
+    }
+    nav img{
+        height: auto;
+        width:200px;
+        margin-left: 3px;
+        margin-top: 5px;
+    }
+   .mytxt{
+    /* margin-left: 20vw; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   }
+    .mytxt h1{
+        font-size: 10vw;
+        line-height: 2vw;
+    }
+    .mytxt span{
+       height: 13vw;
+       width: 50vw;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    .img1,.img2,.main3{
+        display: none;
+    }
+    .img1{
+        position: absolute;
+        display: block;
+        margin-top: 40%;
+    }
+
+    p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    p{
+        display: none;
+    }
+    .down{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column; 
+        margin-top: 80%;
+    }
+    
+}
+
+
